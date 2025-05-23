@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+@theme {
+  /* Periwinkle (Primary, for accents) */
+  --color-periwinkle-100: #f0eeff; /* Very light */
+  --color-periwinkle-300: #e0deff; /* Light */
+  --color-periwinkle-500: #cacbfd; /* Base (client's Periwinkle) */
+  --color-periwinkle-700: #a8a9fb; /* Dark */
+  --color-periwinkle-900: #8686d7; /* Very dark */
+
+  /* Off-white */
+  --color-off-white-100: #ffffff; /* Pure white */
+  --color-off-white-300: #fffaf2; /* Very light */
+  --color-off-white-500: #fff5ea; /* Base (client's Off-white) */
+  --color-off-white-700: #e6dcd1; /* Light greyish */
+  --color-off-white-900: #ccc2b8; /* Darker greyish */
+
+  /* Light purple */
+  --color-light-purple-100: #c9c7f2; /* Very light */
+  --color-light-purple-300: #a29de5; /* Light */
+  --color-light-purple-500: #665ed0; /* Base (client's Light purple) */
+  --color-light-purple-700: #534bb7; /* Dark */
+  --color-light-purple-900: #40389e; /* Very dark */
+
+  /* Black */
+  --color-black-100: #4d4d4d; /* Light grey */
+  --color-black-300: #333333; /* Medium grey */
+  --color-black-500: #000000; /* Base (client's Black) */
+  --color-black-700: #000000; /* Same as base (black can't get darker) */
+  --color-black-900: #000000; /* Same as base */
+
+  /* Dark grey */
+  --color-dark-grey-100: #7f7f7f; /* Light grey */
+  --color-dark-grey-300: #595959; /* Medium grey */
+  --color-dark-grey-500: #333333; /* Base (client's Dark grey) */
+  --color-dark-grey-700: #262626; /* Dark */
+  --color-dark-grey-900: #1a1a1a; /* Very dark */
+
+  /* Green */
+  --color-green-100: #c2d9a8; /* Very light */
+  --color-green-300: #8eb164; /* Light */
+  --color-green-500: #38591f; /* Base (client's Green) */
+  --color-green-700: #2a4318; /* Dark */
+  --color-green-900: #1c2c10; /* Very dark */
+
+  /* Spacing and font sizes (unchanged) */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+}
