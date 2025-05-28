@@ -1,6 +1,6 @@
 @import "tailwindcss";
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Alice&family=Sacramento&display=swap"); */
 
 @theme {
   /* Periwinkle (Primary, for accents) */
@@ -23,6 +23,28 @@
   --color-light-purple-500: #665ed0; /* Base (client's Light purple) */
   --color-light-purple-700: #534bb7; /* Dark */
   --color-light-purple-900: #40389e; /* Very dark */
+
+  /* Earthy Tan Colors */
+  --color-tan-100: #f7f3f0; /* Very light cream */
+  --color-tan-200: #f0e9e3; /* Light cream */
+  --color-tan-300: #e8ddd4; /* Soft tan */
+  --color-tan-400: #d4c4b0; /* Medium tan */
+  --color-tan-500: #c0a889; /* Base tan */
+  --color-tan-600: #a89673; /* Deeper tan */
+  --color-tan-700: #8b7355; /* Rich tan */
+  --color-tan-800: #6d5a45; /* Dark tan */
+  --color-tan-900: #4a3d32; /* Very dark tan */
+
+  /* Warm Earth Colors */
+  --color-earth-100: #f5f1ec; /* Very light earth */
+  --color-earth-200: #ebe3d8; /* Light earth */
+  --color-earth-300: #ddd1c0; /* Soft earth */
+  --color-earth-400: #c9b59c; /* Medium earth */
+  --color-earth-500: #b59e82; /* Base earth */
+  --color-earth-600: #9d8567; /* Deeper earth */
+  --color-earth-700: #7d6b52; /* Rich earth */
+  --color-earth-800: #5e533f; /* Dark earth */
+  --color-earth-900: #3e3629; /* Very dark earth */
 
   /* Black */
   --color-black-100: #4d4d4d; /* Light grey */
@@ -50,4 +72,29 @@
   --spacing-sm: 1rem;
   --font-size-base: 16px;
   --font-size-lg: 20px;
+}
+
+body {
+  font-family: "Alice", serif;
+}
+
+/* Button Styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg transition-all duration-200 cursor-pointer no-underline;
+}
+
+.btn-primary {
+  @apply bg-light-purple-700 text-white hover:bg-light-purple-900 focus:ring-4 focus:ring-periwinkle-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply bg-tan-600 text-white hover:bg-tan-700 focus:ring-4 focus:ring-tan-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+}
+
+.font-sacramento {
+  font-family: "Sacramento", cursive;
+}
+
+.font-alice {
+  font-family: "Alice", serif;
 }
