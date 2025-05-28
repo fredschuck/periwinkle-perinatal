@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-light-purple-900 text-off-white-100">
+    <footer className="bg-periwinkle-900 text-off-white-100">
       <div className="container mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information */}
@@ -60,9 +60,12 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-4 py-2 rounded-lg text-dark-grey-500 flex-grow"
+                className="px-4 py-2 rounded-lg text-white placeholder:text-periwinkle-500 outline-solid outline-white flex-grow"
               />
-              <button type="submit" className="btn btn-secondary">
+              <button
+                type="submit"
+                className="btn bg-white text-periwinkle-900"
+              >
                 Subscribe
               </button>
             </form>
