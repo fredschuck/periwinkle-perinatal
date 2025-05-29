@@ -14,15 +14,13 @@ const Home = () => {
       title: "Birth Doula Services",
       description:
         "Dedicated support during labor for a calm, empowered birth experience.",
-      image:
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/image-2.jpg",
     },
     {
       title: "Postpartum Care",
       description:
         "Nurturing support for you and your baby in those precious early weeks.",
-      image:
-        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/image-3.jpg",
     },
   ];
 
@@ -56,7 +54,10 @@ const Home = () => {
                 Personalized doula support for pregnancy, birth, and
                 beyond—crafted with care to empower you.
               </p>
-              <Link to="/contact" className="btn btn-primary text-lg px-8 py-4">
+              <Link
+                to="/contact"
+                className="btn btn-tertiary text-lg px-8 py-4"
+              >
                 Book a Free Consultation
               </Link>
             </motion.div>

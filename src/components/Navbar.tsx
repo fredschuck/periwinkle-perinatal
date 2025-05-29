@@ -19,10 +19,17 @@ const Navbar = () => {
           <div className="flex-shrink-0 min-w-0">
             <Link
               to="/"
-              className="text-3xl font-sacramento font-bold text-light-purple-500"
+              className="flex items-center text-xl font-logo text-light-purple-500 tracking-widest"
             >
+              <img
+                src="/6.png"
+                alt="Periwinkle Perinatal Logo"
+                className="w-10 mr-2"
+              />
               <span className="hidden sm:inline">Periwinkle Perinatal</span>
-              <span className="sm:hidden">Periwinkle Perinatal</span>
+              <span className="sm:hidden text-xl tracking-widest">
+                Periwinkle Perinatal
+              </span>
             </Link>
           </div>
 

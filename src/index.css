@@ -1,6 +1,4 @@
 @import "tailwindcss";
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Alice&family=Sacramento&display=swap"); */
 
 @theme {
   /* Periwinkle (Primary, for accents) */
@@ -74,6 +72,11 @@
   --font-size-lg: 20px;
 }
 
+@font-face {
+  font-family: "Le Jour Serif";
+  src: url("./fonts/LeJourSerif.otf") format("truetype");
+}
+
 body {
   font-family: "Alice", serif;
 }
@@ -84,17 +87,17 @@ body {
 }
 
 .btn-primary {
-  @apply bg-light-purple-700 text-white hover:bg-light-purple-900 focus:ring-4 focus:ring-periwinkle-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  @apply bg-light-purple-300 text-light-purple-700 hover:bg-light-purple-500 hover:text-white focus:ring-4 focus:ring-periwinkle-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
 }
 
 .btn-secondary {
   @apply bg-tan-600 text-white hover:bg-tan-700 focus:ring-4 focus:ring-tan-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
 }
 
-.font-sacramento {
-  font-family: "Sacramento", cursive;
+.btn-tertiary {
+  @apply bg-earth-700 text-white hover:bg-earth-800 focus:ring-4 focus:ring-earth-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
 }
 
-.font-alice {
-  font-family: "Alice", serif;
+.font-logo {
+  font-family: "Le Jour Serif", serif;
 }
