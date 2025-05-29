@@ -13,9 +13,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-off-white-100 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-off-white-100 shadow-sm md:relative md:z-auto">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0 min-w-0">
             <Link
               to="/"
@@ -24,7 +24,7 @@ const Navbar = () => {
               <img
                 src="/6.png"
                 alt="Periwinkle Perinatal Logo"
-                className="w-10 mr-2"
+                className="w-8 sm:w-10 mr-2 sm:mr-4"
               />
               <span className="hidden sm:inline">Periwinkle Perinatal</span>
               <span className="sm:hidden text-xl tracking-widest">

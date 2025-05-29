@@ -87,7 +87,7 @@ body {
 }
 
 .btn-primary {
-  @apply bg-light-purple-300 text-light-purple-700 hover:bg-light-purple-500 hover:text-white focus:ring-4 focus:ring-periwinkle-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+  @apply bg-light-purple-500 p-3 sm:bg-light-purple-300 sm:text-light-purple-700 text-white hover:bg-light-purple-500 hover:text-white focus:ring-4 focus:ring-periwinkle-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
 }
 
 .btn-secondary {
