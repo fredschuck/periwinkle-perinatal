@@ -25,118 +25,139 @@ const About = () => {
   ];
 
   return (
-    <div className="py-20">
-      <div className="container mx-auto px-4">
-        {/* Introduction Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto text-center mb-16"
-        >
-          <h1 className="text-4xl font-serif font-bold text-primary-800 mb-6">
-            About Me
-          </h1>
-          <p className="text-lg text-gray-600 mb-8">
-            I'm a passionate doula dedicated to supporting families through
-            their pregnancy, birth, and postpartum journey. With over 5 years of
-            experience and numerous certifications, I provide evidence-based
-            care and emotional support to help you have the birth experience you
-            desire.
-          </p>
-        </motion.div>
-
-        {/* Image and Bio Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+    <div className="">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-b from-tan-100 to-off-white-300 py-24 overflow-hidden">
+        <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-4xl mx-auto text-center"
           >
-            <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-                alt="Doula portrait"
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <h2 className="text-2xl font-serif font-semibold text-primary-700 mb-4">
-              My Journey
-            </h2>
-            <p className="text-gray-600 mb-6">
-              My passion for birth work began after supporting my sister through
-              her pregnancy and birth experience. Witnessing the transformative
-              power of continuous support during birth inspired me to become a
-              doula. I believe every family deserves to feel empowered and
-              supported during this special time.
-            </p>
-            <p className="text-gray-600 mb-6">
-              I've had the privilege of supporting over 100 families through
-              their pregnancy and birth journeys. Each experience has taught me
-              something new and deepened my commitment to providing
-              personalized, evidence-based care.
+            <h1 className="text-4xl md:text-5xl font-sacramento text-earth-800 mb-6">
+              About Me
+            </h1>
+            <p className="text-lg text-earth-600 mb-8">
+              I'm a passionate doula dedicated to supporting families through
+              their pregnancy, birth, and postpartum journey. With over 5 years
+              of experience and numerous certifications, I provide
+              evidence-based care and emotional support to help you have the
+              birth experience you desire.
             </p>
           </motion.div>
         </div>
+      </section>
 
-        {/* Certifications Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="bg-primary-100 rounded-lg p-8 mb-20"
-        >
-          <h2 className="text-2xl font-serif font-semibold text-primary-700 mb-6 text-center">
-            Certifications & Training
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {certifications.map((cert) => (
-              <div
-                key={cert}
-                className="flex items-center bg-white p-4 rounded-lg shadow-sm"
-              >
-                <span className="text-primary-500 mr-2">✓</span>
-                <span className="text-gray-600">{cert}</span>
+      {/* Image and Bio Section */}
+      <section className="py-12 md:py-20 bg-earth-100">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="aspect-w-3 aspect-h-4 rounded-xl overflow-hidden shadow-md">
+                <img
+                  src="/becky.jpg"
+                  alt="Doula portrait"
+                  className="object-cover w-full h-full"
+                />
               </div>
-            ))}
-          </div>
-        </motion.div>
+            </motion.div>
 
-        {/* Testimonials Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <h2 className="text-2xl font-serif font-semibold text-primary-700 mb-8 text-center">
-            What Families Say
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.author}
-                className="bg-white p-6 rounded-lg shadow-sm"
-              >
-                <p className="text-gray-600 italic mb-4">
-                  "{testimonial.quote}"
-                </p>
-                <div className="text-primary-600 font-medium">
-                  {testimonial.author}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <h2 className="text-2xl md:text-3xl font-sacramento text-earth-800 mb-4">
+                My Journey
+              </h2>
+              <p className="text-earth-600 mb-6">
+                My passion for birth work began after supporting my sister
+                through her pregnancy and birth experience. Witnessing the
+                transformative power of continuous support during birth inspired
+                me to become a doula. I believe every family deserves to feel
+                empowered and supported during this special time.
+              </p>
+              <p className="text-earth-600 mb-6">
+                I've had the privilege of supporting over 100 families through
+                their pregnancy and birth journeys. Each experience has taught
+                me something new and deepened my commitment to providing
+                personalized, evidence-based care.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-16 bg-off-white-100">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="bg-periwinkle-100 rounded-xl p-6 md:p-8"
+          >
+            <h2 className="text-2xl md:text-3xl font-sacramento text-earth-800 mb-8 text-center">
+              Certifications & Training
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {certifications.map((cert) => (
+                <div
+                  key={cert}
+                  className="flex items-center bg-off-white-300 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <span className="text-periwinkle-700 mr-3 font-semibold">
+                    ✓
+                  </span>
+                  <span className="text-earth-600">{cert}</span>
                 </div>
-                <div className="text-gray-500 text-sm">{testimonial.baby}</div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-12 md:py-20 bg-gradient-to-r from-periwinkle-100 to-tan-200">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <h2 className="text-2xl md:text-4xl font-sacramento text-earth-800 mb-8 md:mb-12 text-center">
+              What Families Say
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+              {testimonials.map((testimonial, index) => (
+                <motion.div
+                  key={testimonial.author}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                  className="bg-off-white-300 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <p className="text-earth-600 italic mb-4">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="text-periwinkle-700 font-medium">
+                    {testimonial.author}
+                  </div>
+                  <div className="text-earth-500 text-sm">
+                    {testimonial.baby}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 };
