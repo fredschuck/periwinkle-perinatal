@@ -11,7 +11,7 @@ const Home = () => {
         "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: "Birth Doula Services",
+      title: "Labor & Delivery Doula Services",
       description:
         "Dedicated support during labor for a calm, empowered birth experience.",
       image: "/image-2.jpg",
@@ -24,19 +24,19 @@ const Home = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      quote: "My doula made my birth experience so empowering and stress-free!",
-      author: "Sarah M., First-Time Mom",
-    },
-    {
-      quote: "The postpartum support was a lifeline during those early days.",
-      author: "Emily R., Mother of Two",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     quote: "My doula made my birth experience so empowering and stress-free!",
+  //     author: "Sarah M., First-Time Mom",
+  //   },
+  //   {
+  //     quote: "The postpartum support was a lifeline during those early days.",
+  //     author: "Emily R., Mother of Two",
+  //   },
+  // ];
 
   return (
-    <div className="font-alice">
+    <div className="">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-tan-100 to-off-white-300 py-24 overflow-hidden">
         <div className="container mx-auto px-4">
@@ -72,15 +72,17 @@ const Home = () => {
                 alt="Doula supporting a mother"
                 className="rounded-lg shadow-md object-cover w-full h-64 md:h-80"
               />
-              <div className="absolute -top-10 -left-10 w-32 h-32 bg-periwinkle-300 rounded-full opacity-20 -z-10"></div>
-              <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-periwinkle-500 rounded-full opacity-20 -z-10"></div>
+              {/* <div className="absolute -top-10 -left-10 w-32 h-32 bg-periwinkle-300 rounded-full opacity-20 -z-10">
+                dd
+              </div>
+              <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-periwinkle-500 rounded-full opacity-20 -z-10"></div> */}
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Trust-Building Section */}
-      <section className="py-16 bg-off-white-100">
+      {/* <section className="py-16 bg-off-white-100">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -107,7 +109,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="py-12 md:py-20 bg-earth-100">
@@ -173,8 +175,8 @@ const Home = () => {
                   </Link>
                 </div>
 
-                {/* Subtle periwinkle accent */}
-                <div className="absolute top-2 sm:top-3 md:top-4 right-2 sm:right-3 md:right-4 w-2 h-2 sm:w-3 sm:h-3 bg-periwinkle-500 rounded-full opacity-70"></div>
+                {/* Subtle periwinkle accent bubble */}
+                {/* <div className="absolute top-2 sm:top-3 md:top-4 right-2 sm:right-3 md:right-4 w-2 h-2 sm:w-3 sm:h-3 bg-periwinkle-500 rounded-full opacity-70"></div> */}
               </motion.div>
             ))}
           </div>

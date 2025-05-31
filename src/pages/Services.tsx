@@ -13,20 +13,22 @@ const Services = () => {
         "Partner support and involvement",
         "Access to resources and referrals",
       ],
-      price: "Starting at $1,200",
+      price: "$800",
     },
     {
-      title: "Birth Doula Services",
+      title: "Labor& Delivery Doula Services",
       description: "Continuous support during labor and delivery.",
       details: [
         "24/7 on-call support from 38 weeks",
         "Continuous physical and emotional support during labor",
+        "Two prenatal meetings planning birth and postpartum care",
+        "Continuous labor and delivery support",
         "Advocacy and communication with medical staff",
         "Comfort measures and pain management techniques",
         "Partner support and guidance",
         "Initial breastfeeding support",
       ],
-      price: "Starting at $1,800",
+      price: "$1,600",
     },
     {
       title: "Postpartum Doula Services",
@@ -39,7 +41,7 @@ const Services = () => {
         "Sleep guidance and support",
         "Referrals to local resources and specialists",
       ],
-      price: "Starting at $35/hour",
+      price: "$25/hour",
     },
   ];
 

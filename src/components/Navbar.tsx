@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-off-white-100 shadow-sm md:relative md:z-auto">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0 min-w-0">
             <Link
@@ -24,10 +24,12 @@ const Navbar = () => {
               <img
                 src="/6.png"
                 alt="Periwinkle Perinatal Logo"
-                className="w-8 sm:w-10 mr-2 sm:mr-4"
+                className="w-7 sm:w-10 mr-2 sm:mr-4"
               />
-              <span className="hidden sm:inline">Periwinkle Perinatal</span>
-              <span className="sm:hidden text-xl tracking-widest">
+              {/* <span className="hidden sm:inline tracking-widest">
+                Periwinkle Perinatal
+              </span> */}
+              <span className="text-lg tracking-widest sm:text-2xl">
                 Periwinkle Perinatal
               </span>
             </Link>
